@@ -24,24 +24,25 @@ The project involves the creation of a smart contract in Solidity that regulates
 
 Create a CourseCommerceManager.sol file, with the following characteristics:
 
--Address of the contract owner
--A structure containing a product address, name, and price in Ether
--An array containing all products
--Total number of sales recorded
--A structure containing information about a sale, such as product purchased, purchase data, and buyer
--An array containing all sales
--Event to track when a new sale is added to the sales array
--Allow the contract owner to withdraw from the contract balance
--Add a new product available for sale
--Return information for a specified product via its identifier
--Allow a customer to purchase a product and record the sale
--Return information for a specific sale via its identifier.
+1. Address of the contract owner
+2. A structure containing a product address, name, and price in Ether
+3. An array containing all products
+4. Total number of sales recorded
+5. A structure containing information about a sale, such as product purchased, purchase data, and buyer
+6. An array containing all sales
+7. Event to track when a new sale is added to the sales array
+8. Allow the contract owner to withdraw from the contract balance
+9. Add a new product available for sale
+10. Return information for a specified product via its identifier
+11. Allow a customer to purchase a product and record the sale
+12. Return information for a specific sale via its identifier.
+
 Next, publish the smart contract on the blockchain.
 
 Also create a Library in Solidity that allows the following operations, and use it within the CourseCommerceManager.sol contract:
 
--Return the products purchased by a specific customer in the form of a data structure
--Calculate the amount of ether sales given a certain period of time.
+13. Return the products purchased by a specific customer in the form of a data structure
+14. Calculate the amount of ether sales given a certain period of time.
 
 ## Contributing
 
