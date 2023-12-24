@@ -5,7 +5,7 @@
 
   <p align="center">
     <br />
-    <a href=""><strong>View Demo</strong></a>
+    <a href=""><strong>Contract on the blockchain</strong></a>
     <br />
     <br />
     <a href="./assets/">Presentation IT</a>
