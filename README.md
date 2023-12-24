@@ -5,7 +5,7 @@
 
   <p align="center">
     <br />
-    <a href="[0x01dAF37A5d4698f8d9d9793AE22d16639aA2D6b4](https://sepolia.etherscan.io/address/0x01daf37a5d4698f8d9d9793ae22d16639aa2d6b4)"><strong>Contract on the blockchain</strong></a>
+    <a href="https://sepolia.etherscan.io/address/0x01daf37a5d4698f8d9d9793ae22d16639aa2d6b4"><strong>Contract on the blockchain</strong></a>
     <br />
     <br />
     <a href="./assets/">Presentation IT</a>
