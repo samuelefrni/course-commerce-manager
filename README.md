@@ -8,7 +8,7 @@
     <a href="https://sepolia.etherscan.io/address/0xd6d9dcca6f610818a360ee26378315391e488ed8"><strong>Contract on the blockchain</strong></a>
     <br />
     <br />
-    <a href="./assets/">Presentation IT</a>
+    <a href="./assets/Progetto Smart Contract con Solidity di Samuele Furnari.pdf">Presentation IT</a>
   </p>
 </div>
 
