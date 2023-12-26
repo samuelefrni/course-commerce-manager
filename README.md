@@ -44,6 +44,14 @@ Also create a Library in Solidity that allows the following operations, and use 
 13. Return the products purchased by a specific customer in the form of a data structure
 14. Calculate the amount of ether sales given a certain period of time.
 
+## About my choices
+
+The choice of Solidity as the main language for the development of the CourseCommerceManager.sol smart contract was motivated by its specific nature for writing contracts on the Ethereum blockchain. Solidity offers a clear and robust syntax, facilitating the safe and reliable development of autonomous contracts that govern the sales process within our e-commerce site. Additionally, Solidity is widely adopted in the blockchain developer community, ensuring ongoing support and resources available for implementation and maintenance.
+
+The choice to use smart contracts on Ethereum is driven by the robustness and decentralization offered by the Ethereum blockchain. Smart contracts allow secure management of transactions, ensuring transparency and trust in sales and purchase operations. The ability to publish the smart contract on the Ethereum blockchain provides an immutable record of all transactions, increasing the transparency and security of operations.
+
+The choices I have adopted aim to guarantee the security, transparency and scalability of the system, allowing IncluDO to offer inclusive online courses and professional training paths in an effective and accessible way to all.
+
 ## Contributing
 
 We welcome contributions! Follow these steps:
