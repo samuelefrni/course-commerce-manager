@@ -32,7 +32,8 @@ library CourseCommerceLibrary {
     function getEtherAmount(
         uint256 _initialPurchaseDate,
         uint256 _finalPurchaseDate,
-        CourseCommerceManager.Sale[] storage _allSales
+        CourseCommerceManager.Sale[] storage _allSales,
+        CourseCommerceManager.Product[] storage _allCourses
     ) internal view returns (uint256) {
         require(
             _initialPurchaseDate < _finalPurchaseDate,
@@ -45,7 +46,7 @@ library CourseCommerceLibrary {
                 _allSales[i].purchaseDate >= _initialPurchaseDate &&
                 _allSales[i].purchaseDate <= _finalPurchaseDate
             ) {
-                totalEtherAmount += 1 ether;
+                totalEtherAmount += _allCourses[i].price;
             }
         }
         return totalEtherAmount;
@@ -111,14 +112,8 @@ contract CourseCommerceManager {
 
     function withdraw(uint256 _amount, address payable _toAddress)
         public
-        payable
         onlyOwner
     {
-        uint256 contractBalance = address(this).balance;
-        require(
-            contractBalance >= _amount,
-            "You probably don't have the funds to effect this withdraw, check the amount and try again!"
-        );
         _toAddress.transfer(_amount);
     }
 
@@ -170,11 +165,11 @@ contract CourseCommerceManager {
     function searchById(uint256 _idProduct)
         public
         view
-        returns (string memory)
+        returns (Product memory)
     {
         for (uint256 i = 0; i < allCourses.length; i++) {
             if (allCourses[i].id == _idProduct) {
-                return allCourses[i].name;
+                return allCourses[i];
             }
         }
         revert("ID product not found");
@@ -195,7 +190,8 @@ contract CourseCommerceManager {
         uint256 totalEtherAmount = CourseCommerceLibrary.getEtherAmount(
             _initialPurchaseDate,
             _finalPurchaseDate,
-            allSales
+            allSales,
+            allCourses
         );
 
         emit etherAmountFromTo(
